@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+        <header id="x">
+            <nav>
+                <div class="Logo">Gizem<b>Sener</b></div>
+                <ul class="navItems">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <div class="links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </nav>
+        </header>
+        <section id="home">
+            <div class="wrapper">
+                <div class="cols cols0">
+                    <span class="topline">Hello</span>
+                    <h1>I'm <span class="multiText"></span></h1>
+                    <p>Fresh graduate Computer Engineer who loves coding</p>
+                    <div class="btns">
+                        <button onclick="window.open('GizemSenerCV.pdf')">download CV</button>
+                        <button action="contactform.html">hire me</button>
+                    
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <!------------ ABOUT SECTION ------------------>
+        <section class="about container" id="about">
+            <!-- Heading -->
+            <h2 class="headingx">About</h2>
+            <!-- About content -->
+            <div class="about-content">
+                <div class="about-data">
+                    <span>About Me</span>
+                    <h2 class="major">Computer Engineer</h2>
+                    <a class="btn" onclick="window.open('GizemSenerCV.pdf')">
+                        Download Cv
+                        <i class="bx bx-download"></i>
+                    </a>
+                </div>
+                <div class="about-text">
+                    <p><span class="keyword">Fresh graduated computer engineer</span> with effective communication and collaboration skills and a 3.43 GPA.</p>
+                    <p>I have prepared most of my university projects with <span class="keyword">Java</span>. I have knowledge of <span class="keyword">Java, JavaScript, HTML and CSS, and database systems like MySQL</span>. As a hardworking and quick-learner, I am now looking for an opportunity to use and expand my technology skills in a collaborative environment with other technologists.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <!------------ SKILLS SECTION ------------------>
+        <section id="skills">
+            <!-- Heading -->
+            <h2 class="headingx">Skills</h2>
+            <!-- Skills Content -->
+            
+                <div class="row">
+                    <div class="item">
+                        <div class="item-text">
+                            <span>Java</span>
+                            <span class="w-90">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar w-90"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-text">
+                            <span>Javascript</span>
+                            <span class="w-75">75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar w-75"></div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-text">
+                            <span>HTML&CSS</span>
+                            <span class="w-95">95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar w-95"></div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!------------------------->
+                </div>
+
+
+
+
+        
+        </section>
+        <!------------ CONTACT FORM-------------->
+        <section class="contact-container" id="contact">
+            <!-- Heading -->
+            <h2 class="headingx">Contact</h2>
+            <!-- Contact Form -->
+            
+                <form>
+                    <h1 class="contactme-text">Contact Me</h1>
+        
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name">
+                <small class="error"></small>
+        
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Your email">
+                <small class="error"></small>
+        
+                <label for="message">Message:</label>
+                <textarea type="text" id="message" placeholder="Your message" rows=""6></textarea>
+                <small class="error"></small>
+                
+                <div class="center">
+                    <input type="submit" value="Send Message">
+                    <p id="success"></p>
+                </div>
+                </form>
+        
+            
+        </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["coder", "engineer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500 
+        })
+    </script>
+    
+</body>
+</html>
